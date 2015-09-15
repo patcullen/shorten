@@ -1,0 +1,128 @@
+html, body, div, ul, li, button, input, p {
+  margin: 0;
+  padding: 0;
+}
+em {
+  font-style: normal;
+}
+
+
+body {
+  background-color: #eee;
+  font: normal 14px "Lucida Console", Monaco, monospace;
+}
+
+body>div {
+  margin: 1.2em auto;
+  width: 500px;
+  text-align: center;
+}
+
+.title {
+
+}
+.title h1 {
+  font-size: 4em;
+  color: #999;
+  margin: 1em 0em 0em;
+  text-shadow: 0px 0px 1px #666;
+}
+.title h1 em {
+  color: #222;
+}
+
+.create {
+  position: relative;
+}
+.create input {
+  border: 2px solid #888;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #424242;
+  padding: 7px 30px 7px 7px;
+  box-shadow: 0px 0px 13px 0px rgba(122,122,122,.2);
+  width: 400px;
+}
+.create input:focus {
+  outline:none;
+}
+.create button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: center center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAOUlEQVR4Ad3SoREAUQwC0Sudzvf8N8wKTIh+IgPf6cQCLMESGuG9RrAES+hkCDJ9Or643TTi5300P2l3f4n3MZCDAAAAAElFTkSuQmCC) no-repeat;
+  color: transparent;
+  position: relative;
+  left: -40px;
+  top: -2px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.create button:hover {
+  opacity: 0.8;
+}
+.create button:focus {
+  outline:none;
+}
+.create p {
+  margin: 0.3em;
+  font:small-caption;
+  color: #999;
+}
+
+.result {
+  min-height: 3.5em;
+}
+
+.popular h3 {
+  color: #333;
+  font-size: 20px;
+  margin: 1.7em 0em 0.6em;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+}
+ul li a {
+  color: #9a9a9a;
+  padding: 0.05em;
+  opacity: 0.75;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+ul li a:hover {
+  opacity: 1;
+}
+.result ul li:first-child a {
+  font-size: 1.5em;
+  padding: 0.2em;
+  opacity: 0.8;
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+.result ul li:first-child a:hover {
+  color: #5e5e5e;
+}
+ul li a em {
+  color: #5e5e5e;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1);}
+}
+
+.oops404 {
+  color: #d88;
+
+}
+
+.clipboard {
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
